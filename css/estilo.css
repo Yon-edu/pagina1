@@ -1,0 +1,354 @@
+
+
+
+/* Hoja de estilo para la creacion de la portada de esta pagina*/
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body{
+	font-family:  'lato';
+	font-size: 16px;
+	background: #fff;
+}
+/*El css de cargando al inicio de la pagina*/
+.hidden{
+	overflow: hidden;
+}
+.centro{
+	height: 100vh;
+	background: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Desde esta parte pertenece a la portada */
+.contenedor{
+
+
+	width: 90%;
+	max-width:1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+header{
+	width: 100%;
+	height: 600px;
+	background-image: url( img/2012_london_olympic_games-1920x1200.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+header .nav {
+				display: flex;
+				justify-content: flex-end;
+				margin: 30px 0;
+
+}
+
+header .nav a {
+				 display: inline-block;
+				 padding:  15px 10px;
+				 font-size: 18px;
+				 text-decoration:  none;
+				 font-weight: 300px;
+				 color: #fff;
+
+}
+
+header .nav a: hover{
+						text-decoration: underline;
+
+
+
+} 
+
+
+header .contenedor-text-header{
+									margin: 120px 0;
+									text-align: center;
+
+
+}
+
+header .contenedor-text-header .titulo-header{
+	font-size: 100px;
+	color: #2c3e50 ;
+	margin-bottom: 5px;
+}
+
+header .contenedor-text-header .linea{
+
+	width: 600px ;
+	margin: auto;
+	height: 3px;
+	background: #3498db;
+	margin-bottom: 20px
+}
+
+header .contenedor-text-header .subtitulo-header{
+	font-size: 20px;
+	color: rgb(black);
+	font-weight: 300px;
+	margin-bottom: 20px
+
+}
+
+header .contenedor-text-header .call-btn{
+	display: inline-block;
+	padding: 15px 15px;
+	border: 1px solid #15a4fa;
+	text-align: center;
+	color: #3498db;
+	text-decoration: none;
+}
+
+header .contenedor-text-header .call-btn:hover{
+	background: #15a4fa;
+	color:#fff;
+
+}
+
+
+/* hoja de estilo de la parti de introducion*/
+main .acerca-de{
+		background: #f5f6fa;
+		padding: 60px 0;
+		text-align: center;
+
+}
+
+main .acerca-de .contenedor-texto-acerca .titulo-acerca {
+
+	font-size: 24px;
+	font-weight: 900px;
+	/*color: #999999;*/
+	margin-bottom: 20px;
+
+}
+
+main .acerca-de .contenedor-texto-acerca .parafo-acerca{
+
+	color: #999999;
+	font-weight: 600px;
+	margin-bottom: 20px;
+}
+
+
+/* hoja de estilo de el menu de iconos*/
+main .icono{
+		padding: 30px 0;
+
+
+}
+.contenedor-icono{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+
+}
+
+.contenedor-icono .icono-individual{
+	width: 33%;
+	margin: 20px 20px;
+
+}    
+
+.contenedor-icono .icono-individual h3{
+	margin: 10px 0;
+
+}
+
+/*hoja de estilo del pportafolio*/
+main .portafolio{
+	padding: 60px 0;
+	background: #f0f3f5;
+}
+
+main .contenedor-texto-portafolio{
+	text-align: center;
+}
+
+main .contenedor-texto-portafolio .titulo-portafolio{
+	font-weight: 900px;
+	font-size: 28px;
+	margin-bottom: 20px;
+
+}
+main .contenedor-texto-portafolio .parafo-portafolio{
+	font-weight: normal;
+	color: #999999;
+	margin-bottom: 60px;
+}
+
+main .portafolio .contenedor-portafolio{
+	display: flex;
+	flex-wrap: wrap;
+	/*flex-wrap: wrap; es para si el contenido sale de lugar*/
+	justify-content: space-between;
+}
+
+main .portafolio .contenedor-portafolio img{
+	width: 32%;
+	margin: auto;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+main .portafolio .contenedor-portafolio img:hover{
+	opacity: .6;
+}
+
+/* footer*/
+footer{
+
+	width: 100%;
+	height: 600px;
+	padding: 60px 0;
+	background-image: url(img/footer.jpg);
+}
+
+footer .footer-texto{
+	text-align: center;
+	color: #fff;
+
+}
+footer .footer-texto h2{
+	font-size: 38px;
+	font-weight: 900;
+	margin-bottom: 15px;
+}
+
+footer .footer-texto .titulo-parafo{
+	font-weight: 300;
+	color: #999999;
+	margin-bottom: 45px;
+}
+
+footer .formulario{
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	margin: auto;
+}
+footer .formulario .nombre-contacto, footer .formulario .nombre-coreo, footer .formulario .mensaje{
+	display: inline-block;
+	margin-bottom: 20px;
+	padding: 15px 0;
+	background: none;
+	border: 1px solid #999999;
+	color: #999999;
+	border-radius: 3px;
+	font-family: 'lato';
+	font-weight: 300;
+	font-size: 14px;
+}
+
+/* para que la caj de formulario de se mueva*/
+footer .formulario .mensaje{
+	max-width: 100%;
+	min-width: 100%;
+	min-height: 150px;
+	max-height: 150px
+
+}
+
+
+footer .formulario .derecho{
+	display: flex;
+	justify-content: flex-end;
+}
+
+footer .formulario .boton-enviar{
+	display: inline-block;
+	padding: 10px 20px;
+	background: none;
+	border: 1px solid #15a4fa;
+	color: #fff;
+	border-radius: 3px;
+}
+footer .formulario .boton-enviar:hover{
+	background: #15a4fa;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* -------Esta es el atributo para hacer el diseno adaptivo-------*/
+
+@media screen and ( max-width: 600px){
+	header .nav {
+		justify-content: center;
+		flex-wrap: wrap;
+		/*---------flex-wrap: wrap; es para que cuando el contenido se salga del margen 
+		de la pantalla lo organisze----------*/
+	}
+	header .contenedor-text-header{
+		margin: 100px 0;
+	}
+}
+
+@media screen and (max-width: 500px){
+	header .contenedor-text-header .titulo-header{
+		font-size: 60px;
+	}
+	header span {
+		display: none;
+		/*=====display: none; elimina lo que esta dentro del span======*/
+	}
+	.contenedor-icono{
+	flex-direction: column;
+
+	}
+
+.contenedor-icono .icono-individual{
+	width: 90%;
+	margin: auto;
+
+	}
+	main .portafolio .contenedor-portafolio{
+	justify-content: space-around;
+}
+
+main .portafolio .contenedor-portafolio img{
+	width: 48%;
+
+}
